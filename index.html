@@ -24,13 +24,31 @@
     top nav
 -->
 <nav>
-	<a href="#">Home</a>
-	<a href="#">About</a>
-	<a href="#">Logo/home</a>
-	<a href="#">Schedule</a>
-	<a href="#">Contact</a>
-	<div class="animation start-home"></div>
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Schedule</a>
+    <a href="#">Contact</a>
+    <div class="animation start-home"></div>
+  </div>
 </nav>
+
+<!--
+NAV SCRIPT
+-->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>
 
     <div class="parallax-content baner-content" id="home">
         <div class="container">

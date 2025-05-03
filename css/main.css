@@ -2,74 +2,90 @@
 TOP NAV
 */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  width: 670px;
   height: 50px;
   border-radius: 8px;
   font-size: 0;
+  background: rgba(255, 255, 255, 0.2); /* Frosted glass effect */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  width: 490px; /* updated width now that less items in nav*/
 }
+
+
 nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  position: relative;
 }
+
 nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: 8px;
 }
+
 a:nth-child(1) {
-	width: 100px;
+  width: 100px;
 }
+
 a:nth-child(2) {
-	width: 110px;
+  width: 110px;
 }
+
 a:nth-child(3) {
-	width: 180px;
+  width: 160px;
 }
+
 a:nth-child(4) {
-	width: 160px;
+  width: 120px;
 }
-a:nth-child(5) {
-	width: 120px;
+
+nav .animation {
+  width: 0;
+  left: 0;
 }
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 100px;
-	left: 0;
-	background-color: #1abc9c;
+
+nav a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
 }
-nav .start-about, a:nth-child(2):hover~.animation {
-	width: 110px;
-	left: 100px;
-	background-color: #e74c3c;
+
+nav a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
 }
-nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 180px;
-	left: 210px;
-	background-color: #3498db;
+
+nav a:nth-child(3):hover ~ .animation {
+  width: 160px;
+  left: 210px;
+  background-color: #3498db;
 }
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-	width: 160px;
-	left: 390px;
-	background-color: #9b59b6;
+
+nav a:nth-child(4):hover ~ .animation {
+  width: 120px;
+  left: 370px;
+  background-color: #e67e22;
 }
-nav .start-contact, a:nth-child(5):hover~.animation {
-	width: 120px;
-	left: 550px;
-	background-color: #e67e22;
-}
+
+
 
 /*
 GENERAL
@@ -97,12 +113,6 @@ a:hover { color: #FF0; }
 /*----------
   NAV
 ----------*/
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
-}
-
 
 .primary-button a {
   display: inline-block;
