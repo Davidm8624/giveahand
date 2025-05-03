@@ -38,17 +38,6 @@
   </div>
 </nav>
 
-<!--
-NAV SCRIPT
--->
-<script>
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
-</script>
 
     <div class="parallax-content baner-content" id="home">
         <div class="container">
@@ -180,18 +169,24 @@ hamburger.addEventListener('click', () => {
             </div>
         </div>
     </div>
+    
+    
+<footer style="background-color: #DC143C; padding: 10px; display: flex; justify-content: space-between; align-items: center; margin: 0 20px; color: #ffffff;">
+  <div style="width: 300px; margin-right: 40px;">
+    <img src="./img/large-logo.gif" width="300" alt="Your GIF">
+  </div>
+  <div style="text-align: center; margin: 0 40px;">
+    <!-- Middle content here -->
+  </div>
+  <div style="text-align: right; margin-left: 40px;">
+    <p>Email: <a href="mailto:your_email@example.com" style="color: #ffffff;">your_email@example.com</a></p>
+    <p>Phone: your_phone_number</p>
+    <p>Facebook: <a href="https://www.facebook.com/your_facebook_page" style="color: #ffffff;">Follow us on Facebook</a></p>
+  </div>
+</footer>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="primary-button">
-                        <a href="#home">Back To Top</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+
+
 
 
 
