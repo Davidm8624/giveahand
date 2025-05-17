@@ -759,3 +759,16 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.pages{
+  background-image: url("../img/pages.jpg");
+  background-size: cover;
+}
+
+.resources-list{
+  padding: 4%;
+}
+
+.resources-list p{
+  align-: right;
+}
