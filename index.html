@@ -26,8 +26,8 @@
 <nav class="desktop-nav">
   <div class="nav-links">
     <a href="index.html">Home</a>
-    <a href="#">About</a>
-    <a href="#">Schedule</a>
+    <a href="about.html">About</a>
+    <a href="schedule.html">Schedule</a>
     <a href="#">Contact</a>
     <div class="animation start-home"></div>
   </div>
@@ -38,9 +38,9 @@
   <div class="mobile-menu" id="mobile-menu">
     <div class="close-btn" id="close-btn">&times;</div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
@@ -246,16 +246,6 @@ session.</p>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        function openCity(cityName) {
-            var i;
-            var x = document.getElementsByClassName("city");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            document.getElementById(cityName).style.display = "block";  
-        }
-    </script>
 
     <script>
         $(document).ready(function(){
