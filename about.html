@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<nav class="desktop-nav">
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="#">Contact</a>
+    <div class="animation start-home"></div>
+  </div>
+</nav>
+
+<div class="mobile-nav">
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="close-btn" id="close-btn">&times;</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('close-btn');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.add('show');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('show');
+  });
+</script>
+<br><br><br><br><br> 
+<!--
+fix later
+-->
+
+<body>
+    <div class="about-card">
+        <img class="pfp-image" src="./img/aboutme.jpg" alt="About Me Image">
+        <div class="text">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            this<br>
+            is<br>
+            designed<br>
+            to<br>
+            hold<br>
+            lots<br>
+            of<br>
+            content<br>
+        </div>
+    </div>
+    
+<footer style="background-color: #DC143C; padding: 30px; display: flex; justify-content: space-around; align-items: center; color: #ffffff; flex-wrap: wrap;">
+  <div style="width: 300px; margin-right: 40px; min-width: 100px;">
+    <img src="./img/large-logo.gif" width="300" alt="Your GIF">
+  </div>
+  <div style="text-align: center; margin: 40px;">
+    <p>your slogan here</p>
+  </div>
+  <div style="text-align: right;">
+    <p>Instructor ID: 05110011646</p>
+    <p>Email: <a href="mailto:your_email@example.com" style="color: #ffffff;">your_email@example.com</a></p>
+    <p>Phone: ###-###-####</p>
+    <p>Facebook: <a href="https://www.facebook.com/your_facebook_page" style="color: #ffffff;">Facebook link</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
