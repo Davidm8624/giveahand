@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
     $(window).scroll(function () {
     var st = $(this).scrollTop();
-    top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
+    top_header.css({'background-position':'center calc(10% + '+(st*.5)+'px)'});
     });
 
 
