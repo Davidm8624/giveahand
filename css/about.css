@@ -3,6 +3,7 @@ body{
       background-size: cover;
 }
 
+
 .about-card {
   width: 90vw;
   max-width: 90vw;
@@ -15,6 +16,8 @@ body{
   align-items: center;
   margin: auto;
   margin-bottom: 10%;
+  overflow-y: auto;
+  padding: 10px;
 }
 
 .pfp-image {
